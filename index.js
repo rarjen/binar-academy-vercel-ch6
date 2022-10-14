@@ -1,11 +1,11 @@
 const express = require("express");
-const port = 3000;
+const PORT = 3000;
 const app = express();
 
 app.use("/", (req, res, next) => {
   return res.status(200).json({
     status: true,
-    message: "manrap",
+    message: "mantap",
   });
 });
 
@@ -23,6 +23,6 @@ app.use((err, req, res, next) => {
   });
 });
 
-app.listen(port, () => {
-  console.log(`Listening to port ${port}`);
+app.listen(PORT, () => {
+  console.log(`Listening to PORT ${PORT}`);
 });
